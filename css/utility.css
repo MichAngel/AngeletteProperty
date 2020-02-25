@@ -1,0 +1,13 @@
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.bottom_sticky {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

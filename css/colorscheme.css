@@ -1,0 +1,12 @@
+:root {
+  --bg-primary: #b6b6b6;
+  --bg-secondary: #f8dec5;
+  --bg-trans: rgba(215, 212, 212, 0.5);
+
+  --text-primary: #000;
+  --text-secondary: #976f61;
+
+  --aux-primary: #d6b79a;
+
+  --test-test: pink;
+}

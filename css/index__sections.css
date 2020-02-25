@@ -1,0 +1,93 @@
+/* Index top section */
+body {
+  background-image: url("/img/background_1_1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__card {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "pl img"
+    "pl img"
+    "pr pr"
+    "img2 img2"
+    "pbl pbr";
+}
+
+.intro__hero {
+  grid-area: img;
+  width: 100%;
+  height: 35vh;
+  border-radius: 1rem;
+}
+
+.intro__pl {
+  grid-area: pl;
+  background: var(--bg-trans);
+  border-radius: 0.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.intro__pr {
+  grid-area: pr;
+  background: var(--bg-trans);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.secondary__hero {
+  grid-area: img2;
+  width: 100%;
+  height: 50vh;
+  border-radius: 1rem;
+}
+
+.main__body__pr {
+  grid-area: pbr;
+  background: var(--bg-trans);
+  border-radius: 1rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.hero__property {
+  background: var(--bg-trans);
+  border-radius: 1rem;
+}
+
+.hero__property li {
+  margin: 0.75rem;
+  list-style: none;
+  justify-self: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .intro__card {
+    display: block;
+  }
+}
+
+@media (min-width: 1101px) {
+  .intro__hero {
+    grid-area: img;
+    width: 100%;
+    height: 50vh;
+    border-radius: 1rem;
+  }
+
+  .secondary__hero {
+    grid-area: img2;
+    width: 100%;
+    height: 75vh;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,53 @@
+.contact__card {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    "fnl fni"
+    "lnl lni"
+    "pnl pni"
+    "eml emi"
+    "messageLabel messageLabel"
+    "messageInput messageInput"
+    "btn btn";
+}
+.firstNameLabel {
+  grid-area: fnl;
+}
+.firstNameInput {
+  grid-area: fni;
+}
+.lastNameLabel {
+  grid-area: lnl;
+}
+.lastNameInput {
+  grid-area: lni;
+}
+.phoneNumberLabel {
+  grid-area: pnl;
+}
+.phoneNumberInput {
+  grid-area: pni;
+}
+.emailLabel {
+  grid-area: eml;
+}
+.emailInput {
+  grid-area: emi;
+}
+.messageLabel {
+  grid-area: messageLabel;
+}
+.messageInput {
+  grid-area: messageInput;
+}
+.btn {
+  grid-area: btn;
+}
+
+.btn:hover {
+  background: var(--bg-secondary);
+}

@@ -1,0 +1,26 @@
+.footer__card {
+  background: var(--bg-primary);
+  padding: 1rem;
+}
+
+.footer__ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer__li {
+  justify-self: center;
+  align-self: center;
+}
+
+.footer__li a {
+  text-decoration: none;
+}
+
+.copywrite__ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.75rem;
+  list-style: none;
+}

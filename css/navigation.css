@@ -1,0 +1,27 @@
+.nav__ul {
+  display: flex;
+  position: top absolute;
+  justify-content: space-around;
+  list-style: none;
+  background: var(--bg-primary);
+  height: 2rem;
+  padding: 1rem;
+}
+
+.nav__li {
+  justify-self: center;
+  align-self: center;
+}
+
+.nav__li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav__li a:visited {
+  color: inherit;
+}
+
+.nav__li a:hover {
+  color: var(--text-secondary);
+}
