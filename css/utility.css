@@ -1,9 +1,9 @@
 .rotate90 {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 .rotate180 {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }
 
 .bottom_sticky {
