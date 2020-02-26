@@ -11,20 +11,17 @@ body {
   padding: 1rem;
   display: grid;
   grid-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "pl img"
-    "pl img"
-    "pr pr"
-    "img2 img2"
-    "pbl pbr";
+    "pl img pr"
+    "img2 pbl pbr";
 }
 
 .intro__hero {
   grid-area: img;
   width: 100%;
-  height: 35vh;
+  height: 100%;
   border-radius: 1rem;
 }
 
@@ -33,7 +30,6 @@ body {
   background: var(--bg-trans);
   border-radius: 0.5rem;
   text-align: center;
-  align-content: center;
 }
 
 .intro__pr {
@@ -46,7 +42,7 @@ body {
 .secondary__hero {
   grid-area: img2;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   border-radius: 1rem;
 }
 
@@ -56,6 +52,10 @@ body {
   border-radius: 1rem;
   text-align: center;
   justify-self: center;
+}
+
+.main__body__pl {
+  grid-area: pbl;
 }
 
 .hero__property {
@@ -73,21 +73,5 @@ body {
 @media only screen and (max-width: 600px) {
   .intro__card {
     display: block;
-  }
-}
-
-@media (min-width: 1101px) {
-  .intro__hero {
-    grid-area: img;
-    width: 100%;
-    height: 50vh;
-    border-radius: 1rem;
-  }
-
-  .secondary__hero {
-    grid-area: img2;
-    width: 100%;
-    height: 75vh;
-    border-radius: 1rem;
   }
 }

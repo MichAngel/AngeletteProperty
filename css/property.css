@@ -110,6 +110,6 @@
   }
 
   .property__card img {
-    height: 40vh;
+    height: 100%;
   }
 }
