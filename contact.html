@@ -16,8 +16,14 @@
       </ul>
     </nav>
 
-    <section class="contact__card">
-      <!-- <form action=""> -->
+    <!-- <section class="contact__card"> -->
+    <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      class="contact__card"
+      data-netlify-recaptcha="true"
+    >
       <label for="firstName" class="contact__label firstNameLabel"
         >First Name</label
       >
@@ -66,10 +72,11 @@
         class="messageInput"
         placeholder="Leave us a message"
       />
-
-      <input type="submit" value="submit" class="btn" />
-      <!-- </form> -->
-    </section>
+      <div data-netlify-recaptcha="true"></div>
+      <button type="submit" class="btn">Send</button>
+      <!-- <input type="submit" value="submit" class="btn" /> -->
+    </form>
+    <!-- </section> -->
 
     <footer class="footer__card bottom_sticky">
       <ul class="footer__ul">

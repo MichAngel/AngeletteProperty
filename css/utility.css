@@ -1,10 +1,10 @@
-.rotate90 {
+/* .rotate90 {
   -webkit-transform: rotate(90deg);
 }
 
 .rotate180 {
   -webkit-transform: rotate(180deg);
-}
+} */
 
 .bottom_sticky {
   position: absolute;
