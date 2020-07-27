@@ -51,3 +51,7 @@
 .btn:hover {
   background: var(--bg-secondary);
 }
+
+.sold__tag {
+  color: darkred;
+}
